@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard CSS3</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar__brand">Dashboard</div>
+
+      <nav class="sidebar__nav">
+        <a href="#" class="nav-link nav-link--active">Resumen</a>
+        <a href="#" class="nav-link">Estadísticas</a>
+        <a href="#" class="nav-link">Proyectos</a>
+        <a href="#" class="nav-link">Configuración</a>
+      </nav>
+    </aside>
+
+    <header class="topbar">
+      <h1 class="topbar__title">Resumen General</h1>
+
+      <div class="topbar__actions">
+        <button class="btn-icon">Exportar</button>
+        <div class="avatar-mini">JS</div>
+      </div>
+    </header>
+
+    <main class="dashboard-main">
+
+      <!-- Fila 1: estadísticas -->
+      <section class="stats-row">
+
+        <div class="stat-card">
+          <span class="stat-card__label">Proyectos Activos</span>
+          <span class="stat-card__value">12</span>
+          <span class="stat-card__trend trend--up">+3 este mes</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-card__label">Tareas Completadas</span>
+          <span class="stat-card__value">84</span>
+          <span class="stat-card__trend trend--up">+12 esta semana</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-card__label">Horas Registradas</span>
+          <span class="stat-card__value">247</span>
+          <span class="stat-card__trend trend--neutral">Sin cambio</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-card__label">Equipo</span>
+          <span class="stat-card__value">8</span>
+          <span class="stat-card__trend trend--down">-1 este mes</span>
+        </div>
+
+      </section>
+
+      <!-- Fila 2: contenido -->
+      <section class="content-row">
+
+        <div class="card card--main">
+          <h2 class="card__title">Proyectos Recientes</h2>
+
+          <table class="project-table">
+            <thead>
+              <tr>
+                <th>Proyecto</th>
+                <th>Estado</th>
+                <th>Progreso</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Portal Web</td>
+                <td>
+                  <span class="badge badge--active">Activo</span>
+                </td>
+                <td>75%</td>
+              </tr>
+
+              <tr>
+                <td>App Mobile</td>
+                <td>
+                  <span class="badge badge--review">Revisión</span>
+                </td>
+                <td>40%</td>
+              </tr>
+
+              <tr>
+                <td>API REST</td>
+                <td>
+                  <span class="badge badge--done">Completo</span>
+                </td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card card--side">
+          <h2 class="card__title">Actividad Reciente</h2>
+
+          <ul class="activity-list">
+            <li class="activity-item">
+              Merge PR #42 — Portal Web
+            </li>
+
+            <li class="activity-item">
+              Nuevo issue creado — App Mobile
+            </li>
+
+            <li class="activity-item">
+              Deploy API REST a producción
+            </li>
+
+            <li class="activity-item">
+              Revisión de código — Juan García
+            </li>
+          </ul>
+        </div>
+
+        <div class="card card--notes">
+          <h2 class="card__title">Notas del Sprint</h2>
+
+          <p class="notes-text">
+            El equipo cerró la integración con la API REST y priorizó para la
+            próxima semana la revisión de accesibilidad del formulario de
+            contacto y la migración del panel de estadísticas a datos reales.
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
